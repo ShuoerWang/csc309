@@ -5,11 +5,83 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+
+.content{
+  margin-top: 100px;
+  float: left;
+}
+.head {
+  width: 100%;
+}
+
+.headDiv {
+  width: 70%;
+  float: left;
+}
+
+
+.menuDiv {
+  font-size: 20px;
+  margin-top: 30px;
+  width: 30%;
+  float: left;
+}
+
+.logo {
+  margin: 20px;
+  float: left;
+ height: 100px;
+ max-width: 300px;
+}
+.title{
+  font-size: 50px;
+  float: left;
+  margin-left: 120px;
+}
+
+.menu {
+  list-style-type: none;
+  float: right;
+  padding: 3px;
+  margin-top: 20px;
+}
+
+.menu li {
+  background-color: transparent;
+  margin-right: 20px;
+  font-weight: bold;
+  list-style: none; /* Gets rid of list bullet points */
+  text-align: center;
+  display: inline-block;      
+}
+
+.menu li a{
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;  
+}
+
+.menu li a:hover{
+  color: orange;  
+}
+
+
+
+.top{
+  width: 30%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 .search {
   width: 100%;
   position: relative;
   display: flex;
 }
+
 
 .searchTerm {
   width: 100%;
@@ -39,14 +111,6 @@ body{
 }
 
 /*Resize the wrap to see the search bar change!*/
-.top{
-  width: 30%;
-  margin-top: 200px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 
 .left{
