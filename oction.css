@@ -1,0 +1,103 @@
+html, body {
+    background-image: url("1501401.jpg") ;
+    background-size:  100%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#header {
+    width: 100%;
+}
+
+#headDiv {
+    width: 70%;
+    float: left;
+}
+#menuDiv {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 30%;
+    float: left;
+}
+
+#logo {
+    margin-top: 30px;
+    margin-left: 100px;
+    float: left;
+    width: 8%;
+}
+#title{
+    color: white;
+    font-size: 50px;
+    float: left;
+    margin-left: 250px;
+}
+
+#menu {
+    list-style-type: none;
+    float: right;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+#menu li {
+    background-color: transparent;
+	margin-right: 20px;
+	font-weight: bold;
+	list-style: none; /* Gets rid of list bullet points */
+	text-align: center;
+	display: inline-block;		
+}
+
+#menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;	
+}
+
+#menu li a:hover{
+    color: orange;	
+}
+
+#mainTextDiv{
+    font-size: 50px;
+    margin-top: 50px;
+    color: white;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#searchDiv{
+    margin-top: 50px;
+    width: 100%;
+    float: left;
+}
+
+#searchBox{
+    text-align: center;
+}
+
+#searchBoxInput {  
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 500px;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+#searchBoxButton {
+    width: 40px;
+    padding: 10px;
+    background: orange;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  

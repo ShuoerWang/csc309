@@ -1,0 +1,173 @@
+html, body {
+    background-image: url("") ;
+    background-size:  100%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#header {
+    width: 100%;
+}
+
+#headDiv {
+    width: 70%;
+    float: left;
+}
+#menuDiv {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 30%;
+    float: left;
+}
+
+#logo {
+    margin-top: 30px;
+    margin-left: 100px;
+    float: left;
+    width: 8%;
+}
+#title{
+    color: black;
+    font-size: 50px;
+    float: left;
+    margin-left: 250px;
+}
+
+#menu {
+    list-style-type: none;
+    float: right;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+#menu li {
+    background-color: transparent;
+	margin-right: 20px;
+	font-weight: bold;
+	list-style: none; /* Gets rid of list bullet points */
+	text-align: center;
+	display: inline-block;		
+}
+
+#menu li a{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;	
+}
+
+#menu li a:hover{
+    color: orange;	
+}
+
+.container {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    border-bottom: 1px solid #E1E8EE;
+}
+  
+/* Columns */
+.left-column {
+    width: 60%;
+    position: relative;
+}
+  
+.right-column {
+    margin-left: 50px;
+    width: 35%;
+}
+  
+  
+/* Left Column */
+.left-column img {
+    width: 100%;
+}
+
+.right-column img {
+    width: 100%;
+}
+  
+  
+/* Product Description */
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+
+.product-description span {
+    font-size: 12px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.product-description h1 {
+    font-weight: 300;
+    font-size: 52px;
+    color: #43484D;
+    letter-spacing: -2px;
+}
+  
+.product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+}
+  
+/* Product Price */
+.product-price {
+    display: flex;
+    align-items: center;
+}
+  
+#bidPrice{
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+}
+
+#sellPrice{ 
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-left: 20px;
+    margin-right: 20px;
+}  
+  
+.buy-btn {
+    display: inline-block;
+    background-color: #7DC855;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+ }
+
+ .buy-btn:hover {
+    background-color: #64af3d;
+}
+
+.sell-btn {
+    display: inline-block;
+    background-color: rgb(241, 3, 3);
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+}
+
+.sell-btn:hover {
+    background-color: #c40707;
+}
+  
+  
