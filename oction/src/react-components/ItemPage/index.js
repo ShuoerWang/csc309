@@ -6,9 +6,14 @@ import Header from '../Header';
 
 /* The ItemPage Component */
 class ItemPage extends React.Component {
+  constructor(props){
+    super(props);
+    
+    console.dir(this.props.state.searchInput);
+  }
   render() {
     return (
-      <div className="wrapper">
+      <div className="item__bg-image center">
         <Header/>
       </div>
     );

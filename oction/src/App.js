@@ -9,6 +9,11 @@ import { Route, Switch, BrowserRouter, Link } from 'react-router-dom';
 
 
 class App extends React.Component {
+
+  state = {
+    searchInput : ""
+  }
+
   render() {
     return (
       <div> 
@@ -16,9 +21,9 @@ class App extends React.Component {
           <Switch> { /* Similar to a switch statement - shows the component depending on the URL path */ }
             { /* Each Route below shows a different component depending on the exact path in the URL  */ }
             <Route exact path='/' 
-              render={() => (<HomePage/>)}/>
+              render={() => (<HomePage state = {this.state}/>)} />
             <Route exact path='/ItemPage' 
-              render={() => (<ItemPage/>)}/>
+              render={() => (<ItemPage searchInput={this.state.searchInput}/>)}/>
           </Switch>
         </BrowserRouter>
       </div>

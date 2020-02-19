@@ -8,7 +8,6 @@ class SearchBox extends React.Component {
   render() {
     const {
       handleInputChange,
-      handleButtonChange
     } = this.props;
 
     return (
@@ -25,7 +24,7 @@ class SearchBox extends React.Component {
         <button 
         id = "searchBoxButton" 
         type="submit" 
-        onClick = {handleButtonChange}
+        // onClick = {() => this.setState({searchInput = })}
         />
       </Link> 
       
