@@ -21,11 +21,12 @@ class SearchPage extends React.Component {
   }
   
   render() {
-    // const {searchInput} = this.props;
+    const {currentUser,
+           searchInput} = this.props;
     
     return (
         <div className="search__bg-image center">
-          <Header/>
+          <Header currentUser = {currentUser}/>
           <body>
             <div>
             <Grid container spacing={40} justify="center">
