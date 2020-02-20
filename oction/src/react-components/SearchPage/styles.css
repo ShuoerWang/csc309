@@ -1,4 +1,12 @@
 /* Styles for the Home React component */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.right{
+  position: relative;
+  margin-left: 330px;
+  margin-top: 50px;
+}
+
 .center {
   position: absolute;
   top: 50%;
