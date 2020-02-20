@@ -7,11 +7,13 @@ import HomePage from './react-components/HomePage';
 import ItemPage from './react-components/ItemPage';
 import SearchPage from './react-components/SearchPage';
 import { Route, Switch, BrowserRouter, Link } from 'react-router-dom';
+import Merchandise from './Model/Merchandise';
 
 class App extends React.Component {
 
   state = {
-    searchInput : ""
+    searchInput : "",
+    merchandises : []
   }
 
   handleInputChange = (event) => {
@@ -27,7 +29,14 @@ class App extends React.Component {
 
   };
 
+  loadMerchandises = function () {
+    this.state.merchandises.push(new Merchandise(1, "Nike Kobe 7", "fucking good", "/img/kobe.jpg"))
+  }
+    
+  
+
   render() {
+    this.loadMerchandises();
     return (
       <div> 
        <BrowserRouter>
