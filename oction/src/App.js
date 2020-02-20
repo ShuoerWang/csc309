@@ -8,6 +8,9 @@ import ItemPage from './react-components/ItemPage';
 import SearchPage from './react-components/SearchPage';
 import { Route, Switch, BrowserRouter} from 'react-router-dom';
 import Merchandise from './Model/Merchandise';
+import SignUp from './react-components/SignUp';
+import Login from './react-components/Login';
+import UserProfile from './react-components/UserProfile';
 
 class App extends React.Component {
 
@@ -46,14 +49,14 @@ class App extends React.Component {
             { /* Each Route below shows a different component depending on the exact path in the URL  */ }
             <Route exact path='/' 
               render={() => (<HomePage 
-                currentUser = {this.currentUser}
+                currentUser = {this.state.currentUser}
                 handleInputChange = {this.handleInputChange}
                 //more attributes
                 
                 />)} />
             <Route exact path='/ItemPage' 
               render={() => (<ItemPage 
-                currentUser = {this.currentUser}
+                currentUser = {this.state.currentUser}
                 item = {this.state.merchandises[0]}
           
                 //more attributes
@@ -61,8 +64,27 @@ class App extends React.Component {
                 />)}/>
             <Route exact path='/SearchPage' 
               render={() => (<SearchPage 
-                currentUser = {this.currentUser}
+                currentUser = {this.state.currentUser}
                 searchInput = {this.state.searchInput}
+                //more attributes
+                
+                />)}/>
+            <Route exact path='/SignUp' 
+              render={() => (<SignUp 
+                currentUser = {this.state.currentUser}
+                
+                //more attributes
+                
+                />)}/>
+            <Route exact path='/Login' 
+              render={() => (<Login 
+                currentUser = {this.state.currentUser}
+                
+                //more attributes
+                />)}/>
+            <Route exact path='/UserProfile' 
+              render={() => (<UserProfile 
+                currentUser = {this.state.currentUser}               
                 //more attributes
                 
                 />)}/>

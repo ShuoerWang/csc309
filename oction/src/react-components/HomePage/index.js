@@ -7,11 +7,6 @@ import Header from './../Header';
 import SearchBox from './../SearchBox';
 
 class HomePage extends React.Component {
-  // handleButtonChange = (event) => {
-  //   event.preventDefault()
-  //   console.dir(this.state.searchInput)
-  //   //link to search page
-  // };
 
   render() {
     const {
@@ -22,14 +17,15 @@ class HomePage extends React.Component {
     document.title = "October's Very Oction";
     return (
       <div className = "home__bg-image center"> 
-        <Header/>
+        <Header 
+          currentUser = {currentUser}
+        />
         <div id="mainTextDiv">
           Buy & Sell <br/>
           Authenticate Sneakers
         </div>
         <SearchBox 
           handleInputChange = {handleInputChange}
-          // handleButtonChange = {this.handleButtonChange}
         />
       </div>
     );  

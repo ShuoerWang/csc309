@@ -14,8 +14,10 @@ class SearchPage extends React.Component {
     
     return (
       <div className="search__bg-image center">
-        <Header/>
-        fuucuuc
+        <Header
+          currentUser = {currentUser}
+        />
+        
       </div>
     );
   }

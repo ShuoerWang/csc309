@@ -15,7 +15,9 @@ class ItemPage extends React.Component {
     
     return (
       <div className="item__bg-image center">
-        <Header/>
+        <Header
+          currentUser = {currentUser}
+        />
         <ItemView 
           item = {item}
         />
