@@ -8,11 +8,14 @@ import Header from '../Header';
 class SearchPage extends React.Component {
 
   render() {
-    const {searchInput} = this.props;
+    const {
+      currentUser,
+      searchInput} = this.props;
     
     return (
       <div className="search__bg-image center">
         <Header/>
+        fuucuuc
       </div>
     );
   }

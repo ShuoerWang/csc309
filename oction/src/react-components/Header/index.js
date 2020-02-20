@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./styles.css";
-import Logo from "../../img/logo.png";
+
 import { Link } from "react-router-dom";
 
 /* The Header Component */
@@ -11,7 +11,7 @@ class Header extends React.Component {
       <div className="header">
         <div className = "headDiv" >
           <Link to={"/"}>
-          <img className = "logo" src={Logo}></img>
+          <img className = "logo" src="/img/logo.png"></img>
           <h1 className = "title">October's Very Oction</h1>
           </Link> 
                  

@@ -15,6 +15,7 @@ class HomePage extends React.Component {
 
   render() {
     const {
+      currentUser,
       handleInputChange
     } = this.props;
 
