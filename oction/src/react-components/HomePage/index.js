@@ -7,27 +7,6 @@ import Header from './../Header';
 import SearchBox from './../SearchBox';
 
 class HomePage extends React.Component {
-
-  // a 'global' state that you can pass through to any child componenets of App.
-  //   In the Routes below they are passed to both the Home and Queue states.
-  // state = {
-  //   searchInput : ""
-  // }
-
-  handleInputChange = (event) => {
-    event.preventDefault();
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
-    // 'this' is bound to the component in this arrow function.
-    this.setState({
-      [name]: value // [name] sets the object property name to the value of the 'name' variable.
-    });
-
-    console.dir(this.state.searchInput);
-
-  };
-
   // handleButtonChange = (event) => {
   //   event.preventDefault()
   //   console.dir(this.state.searchInput)
@@ -35,6 +14,10 @@ class HomePage extends React.Component {
   // };
 
   render() {
+    const {
+      handleInputChange
+    } = this.props;
+
     document.title = "October's Very Oction";
     return (
       <div className = "home__bg-image center"> 
@@ -43,8 +26,8 @@ class HomePage extends React.Component {
           Buy & Sell <br/>
           Authenticate Sneakers
         </div>
-        <SearchBox state = {this.state}
-          handleInputChange = {this.handleInputChange}
+        <SearchBox 
+          handleInputChange = {handleInputChange}
           // handleButtonChange = {this.handleButtonChange}
         />
       </div>

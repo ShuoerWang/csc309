@@ -2,6 +2,7 @@ import React from "react";
 
 import "./styles.css";
 import Logo from "../../img/logo.png";
+import { Link } from "react-router-dom";
 
 /* The Header Component */
 class Header extends React.Component {
@@ -9,8 +10,12 @@ class Header extends React.Component {
     return (
       <div className="header">
         <div className = "headDiv" >
-                 <img className = "logo" src={Logo}></img>
-                 <h1 className = "title">October's Very Oction</h1>
+          <Link to={"/"}>
+          <img className = "logo" src={Logo}></img>
+          <h1 className = "title">October's Very Oction</h1>
+          </Link> 
+                 
+                 {/* <h1 className = "title">October's Very Oction</h1> */}
             </div>
           <div className = "menuDiv">
                  <ul className="menu">

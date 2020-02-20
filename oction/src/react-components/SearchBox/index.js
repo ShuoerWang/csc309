@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 class SearchBox extends React.Component {
   render() {
     const {
-      handleInputChange,
+      handleInputChange
     } = this.props;
 
     return (
@@ -20,11 +20,10 @@ class SearchBox extends React.Component {
         name="searchInput"
         onChange = {handleInputChange}
        />
-      <Link to={"./../ItemPage"}>
+      <Link to={"/SearchPage"}>
         <button 
         id = "searchBoxButton" 
         type="submit" 
-        // onClick = {() => this.setState({searchInput = })}
         />
       </Link> 
       
