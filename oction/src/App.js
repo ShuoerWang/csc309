@@ -6,12 +6,16 @@ import './App.css';
 import HomePage from './react-components/HomePage';
 import ItemPage from './react-components/ItemPage';
 import SearchPage from './react-components/SearchPage';
-import { Route, Switch, BrowserRouter, Link } from 'react-router-dom';
+import { Route, Switch, BrowserRouter} from 'react-router-dom';
+import Merchandise from './Model/Merchandise';
 
 class App extends React.Component {
 
   state = {
-    searchInput : ""
+    searchInput : "",
+    users: [],
+    merchandises : [],
+    currentUser: null
   }
 
   handleInputChange = (event) => {
@@ -27,7 +31,14 @@ class App extends React.Component {
 
   };
 
+  loadMerchandises = function () {
+    this.state.merchandises.push(new Merchandise(1, "Nike Kobe 7", "Sneaker", "fucking good", "/img/kobe.jpg"))
+  }
+    
+  
+
   render() {
+    this.loadMerchandises();
     return (
       <div> 
        <BrowserRouter>
@@ -35,18 +46,22 @@ class App extends React.Component {
             { /* Each Route below shows a different component depending on the exact path in the URL  */ }
             <Route exact path='/' 
               render={() => (<HomePage 
+                currentUser = {this.currentUser}
                 handleInputChange = {this.handleInputChange}
                 //more attributes
                 
                 />)} />
             <Route exact path='/ItemPage' 
               render={() => (<ItemPage 
-                searchInput = {this.state.searchInput}
+                currentUser = {this.currentUser}
+                item = {this.state.merchandises[0]}
+          
                 //more attributes
                 
                 />)}/>
             <Route exact path='/SearchPage' 
               render={() => (<SearchPage 
+                currentUser = {this.currentUser}
                 searchInput = {this.state.searchInput}
                 //more attributes
                 

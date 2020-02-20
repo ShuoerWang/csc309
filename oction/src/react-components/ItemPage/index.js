@@ -3,17 +3,25 @@ import React from "react";
 import "./styles.css";
 
 import Header from '../Header';
+import ItemView from '../ItemView';
 
 /* The ItemPage Component */
 class ItemPage extends React.Component {
 
   render() {
-    const {searchInput} = this.props;
+    const {
+      currentUser,
+      item} = this.props;
     
     return (
       <div className="item__bg-image center">
         <Header/>
+        <ItemView 
+          item = {item}
+        />
+
       </div>
+
     );
   }
 }
