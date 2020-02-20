@@ -27,27 +27,11 @@ class SearchPage extends React.Component {
         <div className="search__bg-image center">
           <Header/>
           <body>
-            <div class="right">
+            <div>
             <Grid container spacing={40} justify="center">
         	    {posts.map(post => (
           	    <Grid item key={post.name}>
-            	    <Card>
-                  <CardActionArea>
-                  <CardMedia
-                  component="img"
-                  alt="Contemplative Reptile"
-                  height="140"
-                  image={post.image}
-                  title="Contemplative Reptile"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    {post.name}
-                  </Typography>
-                  <Typography component="p">{post.price}</Typography>
-                </CardContent>
-              </CardActionArea> 
-            </Card>
+                  {this.renderItems()}
           </Grid>
         ))}
       </Grid>
